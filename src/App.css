@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Nunito+Sans&family=Roboto:wght@100&family=Rubik&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: block;
+    padding: 10px 20px 5px 12px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.15); */
+    background-color: #000;
+}
+.image{
+    width: 100px;
+    /* margin: auto; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-name-text{
+    color: white;
+    margin: auto;
+    /* margin-right: 0;
+    margin-left: 83rem; */
+    margin-left: auto; 
+    margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Drawer card */
+
+.username{
+    margin-top: 3rem;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.email,
+.gender,
+.job-role{
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sidebar */
+
+.container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+.sidebar{
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.top_section{
+    display: flex;
+    padding:20px 11px;
+}
+
+.logo{
+    text-align: center;
+    display: relative;
+    margin-left: 43px;
+}
+
+.bar{
+    display: flex;
+    font-size: 24px;
+}
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 14px;
+    gap: 45px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background:lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+}
+.active{
+    background: lightskyblue;
+    color: #000;
+}
+.icon, .link_text{
+    font-size: 18px;
 }
